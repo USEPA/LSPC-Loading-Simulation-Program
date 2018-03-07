@@ -1,0 +1,1407 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\LSPC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\LSPC.ico"
+IDR_LSPCTYPE            ICON    DISCARDABLE     "res\\LSPCDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_P_INFO
+    BUTTON      ID_USER_COMMENTS
+    SEPARATOR
+    BUTTON      ID_FILE_RUN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Get From Database",           ID_FILE_GETFROMDATABASE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Reload weather data",        ID_FILE_LOADWEATHERDATA
+        MENUITEM SEPARATOR
+        MENUITEM "Load/Reload point source data from a text file", 
+                                                ID_FILE_LOADRELOADPOINTSOURCEDATAFROMATEXTFILE
+
+        MENUITEM "Load/Reload point source data from database", 
+                                                ID_FILE_LOADRELOADPOINTSOURCEDATAFROMDATABASE
+
+        MENUITEM "Save Point Source Data",      ID_FILE_SAVEPOINTSOURCEDATA
+        MENUITEM SEPARATOR
+        MENUITEM "Load/Reload landuse change data from a text file", 
+                                                ID_FILE_LOADRELOADLANDUSECHANGEDATAFROMATEXTFILE
+
+        MENUITEM "Load/Reload landuse change data from database", 
+                                                ID_FILE_LOADRELOADLANDUSECHANGEDATAFROMDATABASE
+
+        MENUITEM "Save landuse change data",    ID_FILE_SAVELANDUSECHANGEDATA
+
+        MENUITEM SEPARATOR
+        MENUITEM "Save default parameters to database", 
+                                                ID_FILE_SAVEDEFAULTPARAMETERSTODATABASE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Run the model",               ID_FILE_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Comments",                    ID_VIEW_COMMENTS
+        MENUITEM "Parameter Info",              ID_VIEW_PARAMETERINFO
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About LSPC...",              ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 246, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About LSPC"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,3,20,20
+    LTEXT           "LSPC Model Version 5.0",IDC_STATIC,39,10,183,10,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000-2014",IDC_STATIC,39,42,119,10
+    DEFPUSHBUTTON   "Close",IDOK,177,52,50,14,WS_GROUP
+    LTEXT           "Tetra Tech, Inc. Fairfax, Virginia, USA",IDC_STATIC,39,
+                    26,131,10
+    LTEXT           "Last updated: March 31, 2014",IDC_STATIC,39,58,124,10
+END
+
+IDD_LSPCVIEW DIALOG DISCARDABLE  0, 0, 200, 137
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDR_MAINFRAME DIALOG DISCARDABLE  0, 0, 330, 16
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_STATIC,12,4,300,8
+END
+
+IDD_DIALOG100 DIALOG DISCARDABLE  0, 0, 224, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Monthly Parameter Option"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Monthly-variable Parameter Selection",IDC_STATIC,7,7,
+                    210,137
+    CONTROL         "Interception storage capacity (vcsfg)",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,26,173,10
+    CONTROL         "Upper zone nominal storage (vuzfg)",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,32,45,173,10
+    CONTROL         "MANNING'S N for the overland flow plane (vnnfg)",
+                    IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,64,
+                    173,10
+    CONTROL         "Interflow inflow parameter (vifwfg)",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,32,83,173,10
+    CONTROL         "Interflow recession constant (vircfg)",IDC_CHECK5,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,102,173,10
+    CONTROL         "Lower zone evapotranspiration parameter (vlefg)",
+                    IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,121,
+                    173,10
+END
+
+IDD_DIALOG50 DIALOG DISCARDABLE  0, 0, 280, 193
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Temporal Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Start time:",IDC_STATIC,52,28,82,8
+    RTEXT           "End time:",IDC_STATIC,52,46,82,8
+    RTEXT           "Time step (minutes):",IDC_STATIC,52,64,82,8
+    EDITTEXT        IDC_EDIT1,140,62,66,13,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Model Input Control ",IDC_STATIC,10,6,252,83
+    LTEXT           "",IDC_DT1,140,26,66,13
+    LTEXT           "",IDC_DT2,140,44,66,13
+    GROUPBOX        "Model Output Control ",IDC_STATIC,10,96,252,83
+    RTEXT           "Start time:",IDC_STATIC,52,116,82,8
+    RTEXT           "End time:",IDC_STATIC,52,134,82,8
+    LTEXT           "Output interval:",IDC_STATIC,86,151,49,8
+    COMBOBOX        IDC_COMBOOUTPUT,140,150,66,68,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_DT3,140,114,66,13
+    LTEXT           "",IDC_DT4,140,133,66,13
+END
+
+IDD_DIALOG40 DIALOG DISCARDABLE  0, 0, 265, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Watershed Information"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Number of subbasins:",IDC_STATIC,17,24,92,8
+    LTEXT           "Number of land parameter groups:",IDC_STATIC,17,84,117,
+                    8
+    LTEXT           "Number of landuse categories:",IDC_STATIC,17,104,107,8
+    EDITTEXT        IDC_EDIT1,147,22,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,147,42,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,147,62,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Watershed Information",IDC_STATIC,6,3,203,130
+    LTEXT           "Number of streams:",IDC_STATIC,17,44,117,8
+    LTEXT           "Number of stream parameter groups:",IDC_STATIC,17,64,
+                    115,8
+    EDITTEXT        IDC_EDIT4,147,82,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,147,102,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG255 DIALOG DISCARDABLE  0, 0, 332, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Water Quality Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Water Quality Control",IDC_STATIC,7,7,318,212
+    CONTROL         "Accumulation rate and limiting storage of QUALOF vary monthly (vqofg)",
+                    IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,23,
+                    239,10
+    CONTROL         "Constituent is a QUALIF (qifwfg)",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,37,80,116,10
+    CONTROL         "Concentration in interflow outflow varies monthly (viqcfg)",
+                    IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,99,
+                    192,10
+    CONTROL         "Constituent is a QUALGW (qagwfg)",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,37,118,127,10
+    CONTROL         "Concentration in groundwater outflow varies monthly (vaqcfg)",
+                    IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,137,
+                    208,10
+    CONTROL         "Atmosperic deposition flag (adfglnd)",IDC_CHECK6,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,37,156,127,10
+    CONTROL         "Constituent is a QUALSURO (qsowfg)",IDC_CHECK7,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,37,41,135,10
+    CONTROL         "Concentration in surface flow varies monthly (vsqcfg)",
+                    IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,60,
+                    181,10
+    CONTROL         "Monthly atmosperic dry deposition (maddfglnd)",
+                    IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,176,
+                    161,10
+    CONTROL         "Monthly atmosperic wet deposition (mawdfglnd)",
+                    IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,195,
+                    164,10
+END
+
+IDD_DLGADD DIALOG DISCARDABLE  0, 0, 362, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Card X"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_BORDER | WS_TABSTOP,
+                    7,21,348,108
+    PUSHBUTTON      "Add Row",IDC_ADD,7,140,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Delete Row",IDC_DELETE,69,140,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Edit Cross-Section",IDC_EDIT,131,140,74,14,NOT 
+                    WS_VISIBLE
+    LTEXT           " A gray shaded record indicates a customized cross-section.",
+                    IDC_INFO,7,7,191,12,NOT WS_VISIBLE
+    PUSHBUTTON      "Export Ftables",IDC_EXPORT,217,140,74,14,NOT WS_VISIBLE
+END
+
+IDD_DIALOG0 DIALOG DISCARDABLE  0, 0, 252, 174
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Simulation Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Model Components",IDC_STATIC,7,7,238,160
+    CONTROL         "Hydrology",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,48,47,10
+    CONTROL         "Sediment",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,139,48,45,10
+    CONTROL         "Water Quality - GQUAL",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,72,89,10
+    CONTROL         "Temperature",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,139,25,56,10
+    CONTROL         "pH - CO2",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,139,139,45,10
+    CONTROL         "Snow",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    25,25,34,10
+    CONTROL         "DO - BOD",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,114,48,10
+    CONTROL         "Nutrients",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,139,114,44,10
+    CONTROL         "Plankton",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,139,44,10
+    GROUPBOX        "Water Quality - RQUAL",IDC_STATIC,14,92,225,68
+END
+
+IDD_DLGNOADD DIALOG DISCARDABLE  0, 0, 339, 214
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "FTable"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_BORDER | WS_TABSTOP,
+                    9,7,321,200
+END
+
+IDD_DIALOG400 DIALOG DISCARDABLE  0, 0, 312, 161
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Stream Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ADMOD,167,23,40,14,ES_AUTOHSCROLL
+    LTEXT           "Advection method:",IDC_STATIC,25,26,133,8
+    EDITTEXT        IDC_KC,167,42,40,14,ES_AUTOHSCROLL
+    LTEXT           "Crop factor associated with PEVT:",IDC_STATIC,25,44,122,
+                    8
+    GROUPBOX        "Stream Information",IDC_STATIC,6,3,223,107
+    LTEXT           "Stream bank erosion:",IDC_STATIC,25,63,122,8
+    EDITTEXT        IDC_sedber,167,61,40,14,ES_AUTOHSCROLL
+    LTEXT           "Monthly conversion factor for Ftable:",IDC_STATIC,25,83,
+                    122,8
+    EDITTEXT        IDC_vconfg,167,80,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG502 DIALOG DISCARDABLE  0, 0, 252, 143
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "General Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Monthly DO concentration in interflow",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,24,134,10
+    CONTROL         "Monthly CO2 concentration in interflow",IDC_CHECK2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,41,137,10
+    CONTROL         "Monthly DO concentration in ground water",IDC_CHECK3,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,58,149,10
+    CONTROL         "Monthly CO2 concentration in ground water",IDC_CHECK4,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,75,153,10
+    GROUPBOX        "DO-CO2 Monthly Controls",IDC_STATIC,7,7,206,94
+END
+
+IDD_DIALOG30 DIALOG DISCARDABLE  0, 0, 247, 74
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "File Location Selection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_WSEDIT,20,30,180,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_WSSB,207,30,22,14
+    GROUPBOX        "Weather station data location:",IDC_STATIC,7,7,233,60,
+                    WS_GROUP
+END
+
+IDD_DIALOG600 DIALOG DISCARDABLE  0, 0, 239, 182
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "TMDL Control Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TMDL point source control:",IDC_STATIC,27,28,87,8
+    LTEXT           "TMDL land-based control:",IDC_STATIC,27,54,106,8
+    EDITTEXT        IDC_EDIT1,143,25,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,143,51,55,14,ES_AUTOHSCROLL
+    LTEXT           "TMDL stream-based control:",IDC_STATIC,27,80,106,8
+    EDITTEXT        IDC_EDIT3,143,77,55,14,ES_AUTOHSCROLL
+    GROUPBOX        "TMDL Controls",IDC_STATIC,7,7,225,160
+    LTEXT           "Number of threshold groups:",IDC_STATIC,27,106,112,8
+    LTEXT           "Number of defined thresholds:",IDC_STATIC,27,132,106,8
+    EDITTEXT        IDC_EDIT4,143,103,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,143,129,55,14,ES_AUTOHSCROLL
+END
+
+IDD_DLGOUTPUT DIALOG DISCARDABLE  0, 0, 502, 310
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Model Output"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Model Output",IDC_STATIC,7,7,488,296
+    CONTROL         "Standard model output",IDC_DEFAULTCHK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,24,87,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,23,38,444,1
+    LTEXT           "Calibration output options:",IDC_STATIC,25,43,82,8
+    CONTROL         "Hydrology",IDC_HYDRO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,146,57,47,10
+    CONTROL         "Sediment",IDC_SEDI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,262,57,45,10
+    CONTROL         "Water Quality - GQUAL",IDC_WQ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,26,76,89,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,23,92,446,1
+    CONTROL         "Custom model output",IDC_CUSTOM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,99,82,10
+    LISTBOX         IDC_CUSTOMLIST,37,117,427,75,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    CONTROL         "Landuse Summary",IDC_LANDUSE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,26,207,74,10
+    LTEXT           "Model results location:",IDC_STATIC,25,260,71,8
+    EDITTEXT        IDC_RESULTLOC,25,273,393,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BOUT,431,273,22,14
+    CONTROL         "Snow",IDC_SNOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,
+                    57,34,10
+    CONTROL         "Water Quality - RQUAL",IDC_WQR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,146,76,89,10
+    COMBOBOX        IDC_COMBOLANDUSE,387,207,66,68,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,23,198,443,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,23,225,441,1
+    CONTROL         "Stream Summary",IDC_STREAM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,146,207,69,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,23,252,442,1
+    CONTROL         "Threshold Analysis Summary",IDC_Threshold,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,235,105,10
+    CONTROL         "Unit-Area Land Output Timeseries",IDC_SUSTAIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,146,235,122,10
+    CONTROL         "Point Source Summary",IDC_PointSource,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,262,207,87,10
+END
+
+IDD_DLGWQ DIALOG DISCARDABLE  0, 0, 479, 343
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Option Selection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Monthly Hydrology Controls",IDC_STATIC,7,142,185,165
+    CONTROL         "Interception storage capacity (vcsfg)",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,160,171,10
+    CONTROL         "Upper zone nominal storage (vuzfg)",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,178,171,10
+    CONTROL         "MANNING'S N for the overland flow plane (vnnfg)",
+                    IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,196,
+                    171,10
+    CONTROL         "Interflow inflow parameter (vifwfg)",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,214,171,10
+    CONTROL         "Interflow recession constant (vircfg)",IDC_CHECK5,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,232,171,10
+    CONTROL         "Lower zone evapotranspiration parameter (vlefg)",
+                    IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,250,
+                    171,10
+    DEFPUSHBUTTON   "OK",IDOK,331,315,55,14,WS_GROUP
+    GROUPBOX        "Water Quality Controls",IDC_STATIC,326,22,139,105
+    CONTROL         "Accumulation",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,206,160,102,10
+    CONTROL         "Interflow concentration",IDC_CHECK9,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,206,196,102,10
+    CONTROL         "Groundwater concentration",IDC_CHECK11,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,206,214,102,10
+    CONTROL         "DO concentration in interflow",IDC_CHECK13,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,336,229,126,10
+    CONTROL         "CO2 concentration in interflow",IDC_CHECK14,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,336,248,126,10
+    CONTROL         "DO concentration in ground water",IDC_CHECK15,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,336,267,126,10
+    CONTROL         "CO2 concentration in ground water",IDC_CHECK16,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,336,286,126,10
+    GROUPBOX        "Monthly DO CO2 Controls",IDC_STATIC,326,212,146,96
+    PUSHBUTTON      "Cancel",IDCANCEL,407,315,55,14,WS_GROUP
+    CONTROL         "Surface flow concentration",IDC_CHECK10,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,206,178,102,10
+    GROUPBOX        "Model Components",IDC_STATIC,7,7,465,128
+    CONTROL         "Snow",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    24,74,44,10
+    CONTROL         "Hydrology",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,44,48,10
+    CONTROL         "Sediment",IDC_CHECK19,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,206,38,49,10
+    CONTROL         "Temperature",IDC_CHECK20,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,104,55,10
+    CONTROL         "GQUAL",IDC_CHECK21,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,336,44,41,10
+    GROUPBOX        "Monthly Water Quality Controls",IDC_STATIC,198,142,122,
+                    166
+    CONTROL         "DO - BOD",IDC_CHECK22,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,336,74,49,10
+    CONTROL         "Nutrients",IDC_CHECK23,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,398,44,49,10
+    CONTROL         "Plankton",IDC_CHECK24,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,398,74,48,10
+    CONTROL         "pH - Carbon",IDC_CHECK25,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,336,104,56,10
+    GROUPBOX        "Irrigation Controls",IDC_STATIC,103,22,89,105
+    CONTROL         "Irrigation",IDC_CHECK17,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,111,44,43,10
+    CONTROL         "Monthly ETc",IDC_CHECK18,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,111,74,56,10
+    CONTROL         "Constant PET",IDC_CHECK26,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,111,104,60,10
+    GROUPBOX        "Monthly Soil Temperature Controls",IDC_STATIC,326,142,
+                    146,66
+    CONTROL         "Surface flow temperature ",IDC_CHECK27,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,336,155,97,10
+    CONTROL         "Interflow temperature ",IDC_CHECK28,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,336,173,84,10
+    CONTROL         "Ground water temperature ",IDC_CHECK29,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,336,191,100,10
+    CONTROL         "Atm. dry deposition on land",IDC_CHECK36,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,206,232,101,10
+    CONTROL         "Atm. wet deposition on land",IDC_CHECK37,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,206,250,103,10
+    CONTROL         "Atm. dry deposition on reach",IDC_CHECK38,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,206,268,105,10
+    CONTROL         "Atm. wet deposition on reach",IDC_CHECK39,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,206,286,107,10
+    GROUPBOX        "Sediment Controls",IDC_STATIC,198,22,122,105
+    GROUPBOX        "Hydrology Controls",IDC_STATIC,14,22,83,105
+    CONTROL         "Stream BER",IDC_CHECK40,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,206,107,61,10
+    GROUPBOX        "",IDC_STATIC,7,270,185,37
+    CONTROL         "Ftable conversion factor (convf)",IDC_CHECK41,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,286,171,10
+    CONTROL         "Monthly cover",IDC_CHECK42,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,206,61,61,10
+    CONTROL         "Monthly NVSI",IDC_CHECK43,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,206,84,61,10
+END
+
+IDD_DLGCROSS DIALOGEX 0, 0, 336, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Main Channel Cross-section Design"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,238,192,60,14
+    PUSHBUTTON      "Edit",IDC_EDIT,37,192,60,14
+    PUSHBUTTON      "Redraw",IDC_CLEAR,104,192,60,14
+    GROUPBOX        "",IDC_MAIN,0,0,279,159,BS_BITMAP | BS_FLAT | NOT 
+                    WS_VISIBLE,WS_EX_TRANSPARENT
+    LTEXT           "",IDC_MAXY,283,3,35,8
+    LTEXT           "",IDC_MAXX,255,165,35,8
+    LTEXT           "",IDC_INFO,26,177,242,8
+    LTEXT           "0",IDC_STATIC,285,149,8,8
+    LTEXT           "0",IDC_STATIC,4,165,8,8
+    LTEXT           "Depth (ft)",IDC_STATIC,288,82,35,8
+    PUSHBUTTON      "FTable Preview",IDC_FT,171,192,60,14
+    LTEXT           "Width (ft)",IDC_STATIC,128,167,35,8
+END
+
+IDD_COMMENTSDLG DIALOG DISCARDABLE  0, 0, 283, 188
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Comments"
+FONT 8, "Courier"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,7,167,50,14
+    CONTROL         "",IDC_RICHEDIT,"RICHEDIT",ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,7,7,269,152
+END
+
+IDD_DIALOG201 DIALOG DISCARDABLE  0, 0, 237, 114
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Irrigation Option Flags"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Irrigation Option Flags",IDC_STATIC,14,14,208,85
+    CONTROL         "Consider Irrigation",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,37,29,117,13
+    CONTROL         "Monthly-variable ET Coefficient",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,37,73,128,12
+    CONTROL         "Constant PET (in lieu of PET time series)",IDC_CHECK3,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,50,177,13
+END
+
+IDD_DIALOG510 DIALOG DISCARDABLE  0, 0, 314, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DO-BOD Controls"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Benthic release flag (for benthic related parameters)",
+                    IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,22,
+                    186,12
+    GROUPBOX        "DO-BOD Control",IDC_STATIC,7,7,300,59
+    EDITTEXT        IDC_EDIT1,26,42,10,10,ES_AUTOHSCROLL
+    LTEXT           "Reaeration flag (to calculate the reaeration coefficient for free-flowing streams)",
+                    IDC_STATIC,39,43,246,8
+END
+
+IDD_DIALOG520 DIALOG DISCARDABLE  0, 0, 257, 193
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nutrients Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Nutrients Control",IDC_STATIC,6,3,182,183
+    CONTROL         "tamfg    total ammonia flag",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,22,142,12
+    CONTROL         "no2fg    nitrite flag",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,42,140,12
+    CONTROL         "po4fg    ortho-phosphorus flag",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,62,140,12
+    CONTROL         "amvfg    ammonia volatilization flag",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,81,137,12
+    CONTROL         "denfg    denitrification flag",IDC_CHECK5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,102,135,12
+    CONTROL         "adnhfg   NH4 adsorption flag",IDC_CHECK6,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,121,127,12
+    CONTROL         "adpofg   PO4 adsorption flag",IDC_CHECK7,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,142,132,12
+    CONTROL         "mphfg    monthly pH flag",IDC_CHECK8,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,26,161,136,12
+END
+
+IDD_DIALOG530 DIALOG DISCARDABLE  0, 0, 389, 206
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Plankton Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Plankton Control",IDC_STATIC,6,3,361,183
+    CONTROL         "phyfg    phytoplankton flag",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,22,142,12
+    CONTROL         "zoofg    zooplankton flag",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,42,140,12
+    CONTROL         "balfg    benthic algae flag",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,62,140,12
+    CONTROL         "sdltfg   influence of sediment washload on light extinction flag",
+                    IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,81,
+                    220,12
+    CONTROL         "amrfg    ammonia retardation of nitrogen-limited growth flag",
+                    IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,102,
+                    220,12
+    CONTROL         "decfg    linkage between carbon dioxide and phytoplankton growth flag",
+                    IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,121,
+                    248,12
+    CONTROL         "nsfg     ammonia is included as part of available nitrogen supply in nitrogen limited growth calculations",
+                    IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,142,
+                    336,12
+    CONTROL         "orefg    indicates the oref parameter in card 534 as a velocity (if checked) otherwise flowrate",
+                    IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,161,
+                    317,12
+END
+
+IDD_DIALOG540 DIALOG DISCARDABLE  0, 0, 350, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "pH Carbon Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PHFFG1,195,20,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHFFG2,195,38,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHFRC1,195,74,40,14,ES_AUTOHSCROLL
+    LTEXT           "Flag for total inorganic carbon removal factor:",
+                    IDC_STATIC,28,23,158,8
+    LTEXT           "Flag for dissolved carbon dioxide removal factor:",
+                    IDC_STATIC,28,41,158,8
+    LTEXT           "Removal fraction for total inorganic carbon:",
+                    IDC_STATIC,28,77,136,8
+    EDITTEXT        IDC_PHFRC2,195,92,40,14,ES_AUTOHSCROLL
+    LTEXT           "Removal fraction for dissolved carbon dioxide:",
+                    IDC_STATIC,28,94,158,8
+    GROUPBOX        "pH Carbon Control",IDC_STATIC,6,3,248,119
+END
+
+IDD_DIALOG460 DIALOG DISCARDABLE  0, 0, 238, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "General Setting"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Temperature Monthly Controls",IDC_STATIC,6,3,206,94
+    CONTROL         "Monthly surface layer temperature flag",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,24,135,10
+    CONTROL         "Monthly interflow temperature flag",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,44,121,10
+    CONTROL         "Monthly ground water temperature flag",IDC_CHECK3,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,64,137,10
+END
+
+IDD_DIALOG420 DIALOG DISCARDABLE  0, 0, 355, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog for Point Sources"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Point Source Information",IDC_STATIC,6,3,335,96
+    EDITTEXT        IDC_nPtSource,150,21,37,14,ES_AUTOHSCROLL
+    LTEXT           "Number of individual point sources:",IDC_STATIC,22,21,
+                    119,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_nPtQuals,150,46,37,14,ES_AUTOHSCROLL
+    LTEXT           "Number of point source QUALS:",IDC_STATIC,22,46,113,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_PSEDIT,150,71,175,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PSSB,108,71,27,14
+    LTEXT           "Point source file path:",IDC_STATIC,22,71,71,14,
+                    SS_CENTERIMAGE
+END
+
+IDD_DIALOG280 DIALOG DISCARDABLE  0, 0, 400, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Water Quality Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Water Quality Control",IDC_STATIC,6,3,195,92
+    CONTROL         "Atmosperic deposition flag (adfgrch)",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,23,128,10
+    CONTROL         "Monthly atmosperic dry deposition (maddfgrch)",
+                    IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,46,
+                    161,10
+    CONTROL         "Monthly atmosperic wet deposition (mawdfgrch)",
+                    IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,69,
+                    165,10
+END
+
+IDD_DIALOG440 DIALOG DISCARDABLE  0, 0, 294, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Sediment Controls",IDC_STATIC,6,3,223,123
+    LTEXT           "Erosion-related cover:",IDC_STATIC,25,26,133,8
+    LTEXT           "Rate of net vertical sediment :",IDC_STATIC,25,50,133,8
+    EDITTEXT        IDC_1,167,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_2,167,47,40,14,ES_AUTOHSCROLL
+    LTEXT           "Sand transport capacity method:",IDC_STATIC,25,74,133,8
+    EDITTEXT        IDC_3,167,71,40,14,ES_AUTOHSCROLL
+    LTEXT           "Street sweeping:",IDC_STATIC,25,98,133,8
+    EDITTEXT        IDC_4,167,95,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG32 DIALOG DISCARDABLE  0, 0, 428, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Landuse Change Information"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Landuse Change Information",IDC_STATIC,7,7,411,70
+    LTEXT           "Landuse Change Flag",IDC_STATIC,19,28,71,10
+    LTEXT           "Landuse Change File Path",IDC_STATIC,19,52,83,10
+    EDITTEXT        IDC_LUchangeFlag,109,26,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LUchangeFilePath,109,49,259,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "---",IDC_LUchangeButton,377,50,25,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "LSPC MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "LSPC\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000-2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "LSPC.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "LSPC Application\0"
+            VALUE "ProductVersion", "4\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_LSPCVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_DIALOG100, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_DIALOG50, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_DIALOG40, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_DIALOG255, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_DLGADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_DIALOG0, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_DLGNOADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_DIALOG400, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_DIALOG502, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_DIALOG30, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_DIALOG600, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DLGOUTPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 495
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 303
+    END
+
+    IDD_DLGWQ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 472
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 336
+    END
+
+    IDD_DLGCROSS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_COMMENTSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_DIALOG201, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_DIALOG510, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_DIALOG520, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_DIALOG530, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 382
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_DIALOG540, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG460, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_DIALOG420, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_DIALOG280, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_DIALOG440, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_DIALOG32, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 421
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG50 DLGINIT
+BEGIN
+    IDC_COMBOOUTPUT, 0x403, 6, 0
+0x6144, 0x6c69, 0x0079, 
+    IDC_COMBOOUTPUT, 0x403, 10, 0
+0x6954, 0x656d, 0x7320, 0x6574, 0x0070, 
+    0
+END
+
+IDD_DLGOUTPUT DLGINIT
+BEGIN
+    IDC_COMBOLANDUSE, 0x403, 10, 0
+0x7641, 0x415f, 0x6e6e, 0x6175, 0x006c, 
+    IDC_COMBOLANDUSE, 0x403, 7, 0
+0x6559, 0x7261, 0x796c, "\000" 
+    IDC_COMBOLANDUSE, 0x403, 8, 0
+0x6f4d, 0x746e, 0x6c68, 0x0079, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "LSPC Model\n\nLSPC\n\n\nLSPC.Document\nLSPC Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "LSPC Model"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STATIONINFO         "Weather Data"
+    IDS_GROUPINFO           "Default Group Assignment"
+    IDS_PEVIOUSLANDUSEINFO  "Landuse Data"
+    IDS_IPEVIOUSLANDUSEINFO "Landuse Attributes"
+    IDS_LANDUSEINFO         "Previous Land Info"
+    IDS_PWATPARAM2          "Pwater Param2"
+    IDS_PWATPARAM3          "PWater Param3"
+    IDS_PWATPARAM4          "PWater Param4"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PWATSTATE           "Water Budget Initial Conditions"
+    IDS_PWATINTC            "Interception storage capacity"
+    IDS_PMONUZN             "Upper zone norminal storage"
+    IDS_PMONMANN            "Manning's oveland coefficient"
+    IDS_PMONINTFLW          "Interflow inflow"
+    IDS_PMONINTREC          "Interflow recession constant"
+    IDS_PMONLZET            "Lower zone evapotranspiration"
+    IDS_IWATPARAM2          "Iwater Parameters"
+    IDS_IWATMONMANN         "iWater Monthly Manning coeff."
+    IDS_IWATMONRET          "iWater Monthly retention"
+    IDS_PQUAL               "General Settings"
+    IDS_PQUALINPUT          "Constant loading parameters"
+    IDS_PQUALMACC           "Accumulation rate"
+    IDS_PQUALMONSQO         "Limiting storage"
+    IDS_PQUALMONINTCON      "Interflow concentrations"
+    IDS_PQUALMONGRD         "Groundwater outflow concentrations"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REACHINFO           "Stream Characteristics"
+    IDS_NETWORK             "Stream Network"
+    IDS_PTSOURCE            "Point Sources"
+    IDS_STRING660           "TMDL Point Source Controls"
+    IDS_STRING450           "Sediment Parameter Group 1"
+    IDS_STRING451           "Sediment Parameter Group 2"
+    IDS_STRING461           "Soil Temperature Parameters"
+    IDS_STRING470           "Surface Temperature Parameters"
+    IDS_STRING500           "Land to Stream Mapping"
+    IDS_PTWITHDRAWAL        "point source withdrawal"
+    IDS_STRING502           "General Settings"
+    IDS_STRING503           "Constant Parameters"
+    IDS_STRING504           "DO interflow concentrations"
+    IDS_STRING505           "DO groundwater concentrations"
+    IDS_STRING540           "pH carbon control"
+    IDS_STRING550           "Sediment Parameter Group 4"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_RUN             "Run the model\nRun the model"
+    ID_FILE_GETFROMDATABASE "Get Input parameters from the database"
+    ID_FILE_SAVEDEFAULTPARAMETERSTODATABASE 
+                            "Save default parameters to database"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING80            "Landuse Routing"
+    IDS_STRING610           "TRGID"
+    IDS_STRING605           "IDS_STRING605"
+    IDS_STRING670           "TMDL Land-based Controls"
+    IDS_STRING690           "TMDL Stream-based Controls"
+    IDS_STRING93            "Snow Parameters Group 1"
+    IDS_STRING94            "Snow Parameters Group 2"
+    IDS_STRING680           "BMPLimitReductionFlag"
+    IDS_STRING685           "BMPLimit"
+    IDS_STRING92            "Snow Control 2"
+    IDS_STRING96            "Snow Init 1"
+    ID_ELAPSED              "Elapsed Time: 00:00:00"
+    ID_REMAIN               "Remaining Time: 00:00:00"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PROGRESS             "MMMMMMMMMMMMMMMMMMMM"
+    IDS_STRING201           "Irrigation Application Options"
+    IDS_STRING202           "Irrigation Application Fractions"
+    IDS_STRING203           "Monthly ET Coefficients"
+    IDS_STRING204           "Irrigation Withdrawal Options"
+    IDS_STRING545           "Sediment Parameter Group 3"
+    IDS_PQUALMONSUROCON     "monthly surface flow concentration"
+    IDS_STRING511           "ox-parm1"
+    IDS_STRING512           "ox-parm2"
+    IDS_STRING513           "oxrx-init"
+    IDS_STRING514           "scour-parm"
+    IDS_STRING506           "CO2 interflow concentrations "
+    IDS_STRING507           "CO2 groundwater concentrations"
+    IDS_STRING205           "Irrigation PET constant value"
+    IDS_STRING521           "nut-parm1"
+    IDS_STRING522           "nut-parm2"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_P_INFO               "Current page parameter info\nParameter Info"
+    ID_USER_COMMENTS        "User comments\nUser comments"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING523           "nut-parm3"
+    IDS_STRING524           "nut-init"
+    IDS_STRING531           "plank-parm1"
+    IDS_STRING532           "plank-parm2"
+    IDS_STRING533           "plank-parm3"
+    IDS_STRING534           "plank-parm4"
+    IDS_STRING535           "plank-init"
+    IDS_STRING455           "Sediment Parameter Group 1"
+    IDS_STRING456           "Sediment Parameter Group 2"
+    IDS_STRING541           "pH parameters"
+    IDS_STRING542           "pH initial condition"
+    IDS_STRING543           "ph-tic removal fraction"
+    IDS_STRING544           "ph-co2 removal fraction"
+    IDS_STRING281           "general qual parameters for stream"
+    IDS_STRING475           "stream temperature parameters"
+    IDS_STRING462           "Soil Temperature Parameters"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING463           "Soil Temperature Parameters"
+    IDS_STRING464           "Soil Temperature Parameters"
+    IDS_STRING465           "Soil Temperature Parameters"
+    IDS_STRING466           "Soil Temperature Parameters"
+    IDS_STRING467           "Soil Temperature Parameters"
+    IDS_STRING452           "sediment to stream mapping"
+    IDS_PQUALMONDRYDEP      "atmospheric dry deposition "
+    IDS_PQUALMONWETDEP      "atmospheric wet deposition"
+    IDS_MST_PARM            "mstlay parm"
+    IDS_MST_TOPSTOR         "initial moisture storage in top soil layers"
+    IDS_MST_SUBSTOR         "initial moisture storage in subsurface layers"
+    IDS_STRING457           "Bank Erosion Parameter 3"
+    IDS_MST_TOPFLX          "initial fractional flux in top soil layers  "
+    IDS_MST_SUBFLX          "initial fractional flux in subsurface layers  "
+    IDS_SOIL_DATA           "soil layer data"
+    IDS_STRING282           "monthly atmospheric dry deposition on reach"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING283           "monthly atmospheric wet deposition on reach"
+    IDS_STRING285           "GQ_SEDDECAY"
+    IDS_STRING286           "GQ_KD"
+    IDS_STRING287           "GQ_ADRATE"
+    IDS_STRING288           "GQ_ADTHETA"
+    IDS_STRING289           "GQ_SEDCONC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING453           "monthly cover"
+    IDS_STRING454           "monthly net vertical sediment input "
+    IDS_WFILEINFO           "weather file information"
+    IDS_WSTATIONINFO        "weather station info"
+    IDS_STRING445           "street sweeping for sediment"
+    IDS_STRING480           "bed conduction parameters"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING485           "monthly ground temperatures"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING446           "street sweeping for GQual"
+    IDS_STRING501           "RQUAL: atmosphere to stream mapping"
+    IDS_STRING435           "Linkage Files"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\LSPC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxdb.rc"          // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
